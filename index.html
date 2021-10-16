@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Edward Chang</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="images/banana.gif">
+        <link rel="stylesheet" href="CSS/homepage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ala2wlp.css">
+        
+    </head>
+        <body class = "body" style = "background: #faf8f8">
+
+        <div id="header-bar">
+            <!-- <button class="headerButton" id="contact">Contact</button>
+            <button class="headerButton" id="work">Work</button>
+            <button class="headerButton" id="skills">Skills</button>
+            <button class="headerButton" id="aboutMe">About Me</button>
+            <button class="headerButton" id="home">Home</button> -->
+            <a>Contact</a>
+            <a>Yada</a>
+            <a>Details</a>
+            <a>Home</a>
+        </div>
+
+
+        <!-- <div class="intro">
+            <h4>Hello</h4>
+        </div> -->
+
+        <div class="popup-overlay" id="overlayID">
+            <!--Creates the popup content-->
+            <div class="popup-content" id="contentID">
+                    <h2>Temporary Popup</h2>
+                        <p> I can code a popup!!!</p>
+                    <!--popup's close button-->
+                 <button class="close">Close</button>
+            </div>
+        </div>
+
+        <div class = 'name'>
+            <h4>Application Name Here</h4>
+            <div class="pfp">
+                <img src = "images/banana.gif">
+            </div>
+        </div>
+        <div class='about'>
+            <button id="expandButton">About Me!</button>
+        </div>
+
+
+        <div class='footer'>
+            <ul>
+                <li>About</li>
+                <li>Skills</li>
+                <li>Work</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        
+    </body>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("header-bar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>
