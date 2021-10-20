@@ -109,41 +109,39 @@ a:hover{
     text-decoration: none;
 }
 
-
-.intro {
-    display: inline-flex;
-    margin-top: 200px;
-    margin-left: 50px;
-    margin-right: 50px;
-    font-family: filson-pro, sans-serif;
-    font-size: 24px;
-    padding: 0px 100px;
-    color: black;
-    display: flex;
-}
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/samplehero.png");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
 .name {
     font-size: 85px;
-    /* margin-top: -100px; */
+    margin-top: 50px;
     margin-left: 50px;
     padding: 0px 100px;
-    /* text-align: center; */
-    /* padding: 20px; */
-    color: black;
-    font-family: "New-Spirit" ;
+    color: white;
+    /* font-family: "New-Spirit" ; */
+    font-family: Arial, Helvetica, sans-serif;
     display: inline-flex;
 }
 
-img {
-    display: inline-flex;
+.pfp {
+    /* display: inline-flex; */
     /* not circular for some reason */
     /* border-radius: 50%; */
     margin-top: 50px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin-right: 10px;
-    padding-left: 300px;
-    width: 200px;
-    height: 200px;
+    padding-right: 300px;
+    /* width: 100px;
+    height: 100px; */
+    transform: scale(0.75,0.75);
+    /* text-align:right; */
+    float: right;
 }
 
 .footer{
